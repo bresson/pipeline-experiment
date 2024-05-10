@@ -33,10 +33,7 @@ class WorkerPool extends WorkerInterface {
         console.log('Task completed with result:', result);
         this.setWorkerState(worker, 'idle');
         const taskId = result.taskId;
-        const task = this.taskMap.get(taskId);
-        if (task) {
-            this.taskMap.delete(taskId);
-        }
+        this.taskMap.delete(taskId);
         if (this.onTaskCompleteCallback) {
             this.onTaskCompleteCallback(result);
         }

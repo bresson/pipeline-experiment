@@ -14,32 +14,7 @@ self.onmessage = function (e) {
     });
 };
 
-// function findPrimeFactorsInRange(start, end) {
-//     const getPrimeFactors = (num) => {
-//         const factors = [];
-//         while (num % 2 === 0) {
-//             factors.push(2);
-//             num = Math.floor(num / 2);
-//         }
-//         for (let i = 3; i * i <= num; i += 2) {
-//             while (num % i === 0) {
-//                 factors.push(i);
-//                 num = Math.floor(num / i);
-//             }
-//         }
-//         if (num > 2) {
-//             factors.push(num);
-//         }
-//         return factors;
-//     };
-
-//     const results = {};
-//     for (let num = start; num <= end; num++) {
-//         results[num] = getPrimeFactors(num);
-//     }
-//     return results;
-// }
-
+// evil dupe, importScripts('primeUtils.js'); isn't working right now
 function isPrime(num) {
     if (num <= 1) return false;
     if (num <= 3) return true;
