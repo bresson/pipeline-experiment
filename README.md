@@ -1,6 +1,6 @@
 # Task/Work queue
 
-Experiment in modeling a producer-consumer pipeline using a task queue, task manager and worker pool to perform and potentially parallelize more intensive computation work outside of the UI/main thread. These pipelines are integral to many technology stacks such as AWS SQS, Google Cloud Pub/Sub, etc. and are applicable in many problem domains such serverless architectures, event driven and distributed systems, etc.
+Inspired by Erlang, experiment in modeling a producer-consumer pipeline using a task queue, task manager and worker pool to perform and potentially parallelize more intensive computation work outside of the UI/main thread. These pipelines are integral to many technology stacks such as AWS SQS, Google Cloud Pub/Sub, etc. and are applicable in many problem domains such serverless architectures, event driven and distributed systems, etc.
 
 The pipeline is tested by a script that attempts to find every prime number between the number `2` and an upperbound set by the user (with a limit of `50,000,000`)
 
